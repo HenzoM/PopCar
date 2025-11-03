@@ -49,7 +49,7 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border);
             padding: 1rem 0;
@@ -57,10 +57,10 @@
                     rgba(11, 19, 43, 0.7),
                     rgba(11, 19, 43, 0.0))
             transform: translateY(0);
-            transition: transform 0.28s ease;
+            transition: transform 0.3s ease;
         }
         .header-hidden {
-            transform: translateY(-120%);
+            transform: translateY(-100%);
         }
 
         .nav {
@@ -610,10 +610,9 @@
             
         .contact {
             padding: 60px 0;
-            background-color: #f8f9fa; /* Fundo levemente cinza para a seção */
+            background-color: #f8f9fa;
         }
 
-        /* Título e Descrição da Seção */
         .section-header {
             text-align: center;
             margin-bottom: 50px;
@@ -621,7 +620,7 @@
 
         .section-title {
             font-size: 2.5rem;
-            color: #0b132b; /* Azul petróleo escuro */
+            color: #0b132b;
             margin-bottom: 15px;
         }
 
@@ -632,39 +631,36 @@
             margin: 0 auto;
         }
 
-        /* Layout dos Cards (Contact Grid) */
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo, 3 colunas */
-            gap: 30px; /* Espaçamento entre os cards */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        /* Estilo Base dos Cards de Informação */
         .info-card {
             background-color: white;
             border-radius: 8px;
             padding: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
-            height: 100%; /* Garante que todos os cards tenham a mesma altura */
+            height: 100%;
         }
 
         .info-card .form-title {
             font-size: 1.6rem;
             color: #0b132b;
             margin-bottom: 25px;
-            border-bottom: 2px solid #FFC300; /* Linha amarela da marca */
+            border-bottom: 2px solid #FFC300;
             padding-bottom: 10px;
-            display: inline-block; /* Para a borda pegar só o texto */
+            display: inline-block;
         }
 
-        /* Itens de Contato (ícone + texto) */
         .contact-item {
             display: flex;
-            align-items: flex-start; /* Alinha o texto do topo */
+            align-items: flex-start;
             gap: 15px;
             margin-bottom: 20px;
         }
@@ -680,32 +676,29 @@
             line-height: 1.5;
         }
 
-        /* Estilo dos Ícones */
         .contact-icon {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 45px; /* Tamanho do círculo do ícone */
+            width: 45px;
             height: 45px;
-            border-radius: 50%; /* Formato de círculo */
-            font-size: 24px; /* Tamanho do ícone */
-            color: white; /* Cor do ícone */
-            flex-shrink: 0; /* Impede que o ícone diminua */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar o ícone */
+            border-radius: 50%;
+            font-size: 24px; 
+            color: white; 
+            flex-shrink: 0; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         }
 
-        /* Cores específicas para os ícones */
         .whatsapp-color {
-            background-color: #25D366; /* Verde WhatsApp */
+            background-color: #25D366;
         }
 
         .map-color {
-            background-color: #dc3545; /* Vermelho vibrante do Google Maps */
+            background-color: #dc3545;
         }
-
-        /* Estilo para links (WhatsApp e Localização) */
+        
         .whatsapp-link, .map-link {
-            color: #FFC300; /* Cor da marca para os links */
+            color: #FFC300;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
@@ -751,6 +744,10 @@
             }
             .info-card {
                 margin-bottom: 20px;
+            }
+            .logo img {
+                height: 40px !important;
+                width: auto !important;
             }
         }
 
